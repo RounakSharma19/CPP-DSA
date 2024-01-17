@@ -28,6 +28,14 @@ int main()
             k++;
         }
     }
+    for (int i = 0; i < j; i++)
+    {
+        cout << even_arr[i] << " ";
+    }
+    for (int i = 0; i < k; i++)
+    {
+        cout << odd_arr[i] << " ";
+    }
 
     return 0;
 }
