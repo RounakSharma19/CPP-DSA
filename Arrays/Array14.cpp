@@ -29,7 +29,9 @@ int main()
 
     for (int i = 0; i < 4; i++)
     {
-        cout << ar[i][i] << " ";
+        cout << ar[i][i];
+        int j = 4 - 1 - i;
+        swap(ar[i][i], ar[i][j]);
     }
     cout << endl;
 
@@ -37,8 +39,12 @@ int main()
 
     for (int i = 0; i < 4; i++)
     {
-        int j = 4 - 1 - i;
-        cout << ar[i][j] << " ";
+        for (int j = 0; j < 4; j++)
+
+        {
+            cout << ar[i][j] << " ";
+        }
+        cout << endl;
     }
     return 0;
 }
